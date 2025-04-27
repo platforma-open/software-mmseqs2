@@ -1,0 +1,42 @@
+{
+  "name": "@platforma-open/milaboratories.software-mmseqs2",
+  "version": "1.0.0",
+  "description": "MMseqs2 software package for Platforma Backend",
+  "scripts": {
+    "build": "true",
+    "pkg:build": "./scripts/build.sh main",
+    "pkg:publish": "./scripts/publish.sh main",
+    "prepublishOnly": "npm run pkg:build && npm run pkg:publish"
+  },
+  "files": [
+    "dist/"
+  ],
+  "block-software": {
+    "artifacts": {
+      "main": {
+        "registry": "platforma-open",
+        "version": "17-b804f",
+        "type": "binary",
+        "roots": {
+          "linux-x64": "./dld/mmseqs2-linux-x64",
+          "linux-aarch64": "./dld/mmseqs2-linux-aarch64",
+          "macosx-x64": "./dld/mmseqs2-macosx-x64",
+          "macosx-aarch64": "./dld/mmseqs2-macosx-aarch64",
+          "windows-x64": "./dld/mmseqs2-windows-x64"
+        }
+      }
+    },
+    "entrypoints": {
+      "mmseqs2": {
+        "binary": {
+          "artifact": "main",
+          "cmd": ["{pkg}/bin/mmseqs"]
+        }
+      }
+    }
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@platforma-sdk/package-builder": "^2.15.6"
+  }
+} 
