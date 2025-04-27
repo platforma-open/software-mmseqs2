@@ -1,11 +1,14 @@
-# MMseqs2 Software Package
+# Soedinglab MMseqs2 Software Package
 
-This package provides MMseqs2 binaries for the Platforma Backend system.
+This package provides Soedinglab MMseqs2 binaries for the Platforma Backend system.
+
+## Reference
+https://github.com/soedinglab/MMseqs2
 
 ## Installation
 
 ```bash
-npm install @platforma-open/milaboratories.software-mmseqs2
+npm install @platforma-open/soedinglab.software-mmseqs2
 ```
 
 ## Usage

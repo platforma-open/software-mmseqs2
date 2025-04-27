@@ -1,7 +1,7 @@
 {
-  "name": "@platforma-open/milaboratories.software-mmseqs2",
+  "name": "@platforma-open/soedinglab.software-mmseqs2",
   "version": "1.0.0",
-  "description": "MMseqs2 software package for Platforma Backend",
+  "description": "Soedinglab MMseqs2 software package for Platforma Backend",
   "scripts": {
     "build": "true",
     "pkg:build": "./scripts/build.sh main",
