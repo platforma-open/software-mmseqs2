@@ -1,6 +1,6 @@
 {
   "name": "@platforma-open/soedinglab.software-mmseqs2",
-  "version": "1.0.0",
+  "version": "1.17.0",
   "description": "Soedinglab MMseqs2 software package for Platforma Backend",
   "scripts": {
     "build": "true",
@@ -12,24 +12,20 @@
     "dist/"
   ],
   "block-software": {
-    "artifacts": {
-      "main": {
-        "registry": "platforma-open",
-        "version": "17-b804f",
-        "type": "binary",
-        "roots": {
-          "linux-x64": "./dld/mmseqs2-linux-x64",
-          "linux-aarch64": "./dld/mmseqs2-linux-aarch64",
-          "macosx-x64": "./dld/mmseqs2-macosx-x64",
-          "macosx-aarch64": "./dld/mmseqs2-macosx-aarch64",
-          "windows-x64": "./dld/mmseqs2-windows-x64"
-        }
-      }
-    },
     "entrypoints": {
-      "mmseqs2": {
+      "main": {
         "binary": {
-          "artifact": "main",
+          "artifact": {
+            "registry": "platforma-open",
+            "type": "binary",
+            "roots": {
+              "linux-x64": "./dld/mmseqs2-linux-x64",
+              "linux-aarch64": "./dld/mmseqs2-linux-aarch64",
+              "macosx-x64": "./dld/mmseqs2-macosx-x64",
+              "macosx-aarch64": "./dld/mmseqs2-macosx-aarch64",
+              "windows-x64": "./dld/mmseqs2-windows-x64"
+            }
+          },
           "cmd": ["{pkg}/bin/mmseqs"]
         }
       }
@@ -39,4 +35,4 @@
   "devDependencies": {
     "@platforma-sdk/package-builder": "^2.15.6"
   }
-} 
+}
