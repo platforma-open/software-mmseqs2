@@ -31,14 +31,12 @@ To upgrade to a new version of MMseqs2:
      ```
 
 2. Update package.json:
-   - Update the version in `block-software.artifacts.main.version` to the new version (e.g., "18-b1234")
-   - Bump the package version in the root `version` field if needed
+   - Bump the package `version` field in `package.json`
 
-3. Build and publish:
-   ```bash
-   npm run pkg:build
-   npm run pkg:publish
-   ```
+3. Commit changes to the repository and push them to `main` branch, so CI do the release for you.
+
+If you need to build and publish it manually, just run `npm publish`
+If you need to build it manually without publishing, run `npm run pkg:build`
 
 ## Supported Platforms
 
