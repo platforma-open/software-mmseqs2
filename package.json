@@ -5,7 +5,7 @@
   "scripts": {
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "build": "pl-pkg build",
+    "build": "pl-pkg build --all-platforms",
     "prepublishOnly": "pl-pkg prepublish"
   },
   "files": [
