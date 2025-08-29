@@ -1,6 +1,6 @@
 {
   "name": "@platforma-open/soedinglab.software-mmseqs2",
-  "version": "1.17.0",
+  "version": "1.17.1",
   "description": "Soedinglab MMseqs2 software package for Platforma Backend",
   "scripts": {
     "changeset": "changeset",
@@ -20,7 +20,9 @@
             "dockerfile": "Dockerfile",
             "context": "./dld/mmseqs2-linux-x64"
           },
-          "cmd": ["mmseqs"]
+          "cmd": [
+            "mmseqs"
+          ]
         },
         "binary": {
           "artifact": {
@@ -34,7 +36,9 @@
               "windows-x64": "./dld/mmseqs2-windows-x64"
             }
           },
-          "cmd": ["{pkg}/bin/mmseqs"]
+          "cmd": [
+            "{pkg}/bin/mmseqs"
+          ]
         }
       }
     }
