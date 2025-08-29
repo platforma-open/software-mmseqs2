@@ -3,10 +3,10 @@
   "version": "1.17.0",
   "description": "Soedinglab MMseqs2 software package for Platforma Backend",
   "scripts": {
-    "build": "true",
-    "pkg:build": "./scripts/build.sh main",
-    "pkg:publish": "./scripts/publish.sh main",
-    "prepublishOnly": "npm run pkg:build && npm run pkg:publish"
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "build": "pl-pkg build",
+    "prepublishOnly": "pl-pkg prepublish"
   },
   "files": [
     "dist/"
@@ -14,6 +14,14 @@
   "block-software": {
     "entrypoints": {
       "main": {
+        "docker": {
+          "artifact": {
+            "type": "docker",
+            "dockerfile": "Dockerfile",
+            "context": "./dld/mmseqs2-linux-x64"
+          },
+          "cmd": ["mmseqs"]
+        },
         "binary": {
           "artifact": {
             "registry": "platforma-open",
@@ -33,6 +41,7 @@
   },
   "license": "UNLICENSED",
   "devDependencies": {
-    "@platforma-sdk/package-builder": "^2.15.6"
+    "@platforma-sdk/package-builder": "^3.2.3",
+    "@changesets/cli": "^2.27.10"
   }
 }

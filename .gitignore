@@ -1,4 +1,6 @@
-dist/
+.turbo
 node_modules/
+dld/
+dist/
 pkg-*.tgz
-package.sw.json
+.npmrc
