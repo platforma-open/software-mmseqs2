@@ -1,6 +1,6 @@
 {
   "name": "@platforma-open/soedinglab.software-mmseqs2",
-  "version": "1.17.1",
+  "version": "1.17.2",
   "description": "Soedinglab MMseqs2 software package for Platforma Backend",
   "scripts": {
     "changeset": "changeset",
