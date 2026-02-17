@@ -1,5 +1,11 @@
 # @platforma-open/soedinglab.software-mmseqs2
 
+## 1.18.0
+
+### Minor Changes
+
+- e251eaa: Add matrix files to the distribution
+
 ## 1.17.2
 
 ### Patch Changes
