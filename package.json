@@ -5,6 +5,7 @@
   "scripts": {
     "changeset": "changeset",
     "version-packages": "changeset version",
+    "prebuild": "bash -c 'for d in dld/*/; do cp -r data/ \"$d/data/\"; done'",
     "build": "pl-pkg build --all-platforms",
     "prepublishOnly": "pl-pkg prepublish"
   },
