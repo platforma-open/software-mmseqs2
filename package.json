@@ -19,7 +19,8 @@
           "artifact": {
             "type": "docker",
             "dockerfile": "Dockerfile",
-            "context": "./dld/mmseqs2-linux-x64"
+            "context": "./dld/mmseqs2-linux-x64",
+            "pkg": "/usr/data"
           },
           "cmd": [
             "mmseqs"
