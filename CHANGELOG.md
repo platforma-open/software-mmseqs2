@@ -1,5 +1,11 @@
 # @platforma-open/soedinglab.software-mmseqs2
 
+## 1.18.2
+
+### Patch Changes
+
+- 41d1ac6: Revert macos binaries
+
 ## 1.18.1
 
 ### Patch Changes
