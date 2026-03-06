@@ -1,5 +1,11 @@
 # @platforma-open/soedinglab.software-mmseqs2
 
+## 1.18.1
+
+### Patch Changes
+
+- 5c74e31: chore: re-build mmseqs for linux amd64 and macos arm64 with fix for cache overflow
+
 ## 1.18.0
 
 ### Minor Changes
