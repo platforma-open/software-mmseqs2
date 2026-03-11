@@ -1,5 +1,11 @@
 # @platforma-open/soedinglab.software-mmseqs2
 
+## 1.18.3
+
+### Patch Changes
+
+- 0dbfddb: Add statically linked binary for linux
+
 ## 1.18.2
 
 ### Patch Changes
