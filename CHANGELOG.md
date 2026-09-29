@@ -1,5 +1,11 @@
 # @platforma-open/soedinglab.software-mmseqs2
 
+## 1.19.0
+
+### Minor Changes
+
+- 8646b52: Update MMseqs2 to 3b6aa9c for linux x64/aarch64 and macOS; includes upstream fix for the prefilter duplicate-overflow bug
+
 ## 1.18.3
 
 ### Patch Changes
