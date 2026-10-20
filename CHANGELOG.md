@@ -1,5 +1,11 @@
 # @platforma-open/soedinglab.software-mmseqs2
 
+## 1.19.1
+
+### Patch Changes
+
+- d0b8554: Release every package through npm trusted publishing (OIDC) so each package's trusted publisher is used before it expires.
+
 ## 1.19.0
 
 ### Minor Changes
